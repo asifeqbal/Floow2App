@@ -4,7 +4,7 @@
     <description>  
        A new Floow2 APP
     </description>
-    <author email="asif.eqbal@vrisini.com" href="http://www.floow2.com/fl2-en-mobile.html">
+    <author email="robhaenen@floow2.com" href="http://www.floow2.com/fl2-en-mobile.html">
         Floow2 Team
     </author>
     <content src="index.html" />
@@ -67,6 +67,13 @@
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
+	<platform name="android">
+	 <allow-intent href="market:*" />
+	</platform>
+	<platform name="ios">
+	 <allow-intent href="itms:*" />
+	 <allow-intent href="itms-apps:*" />
+	</platform>
 	<allow-intent href="*" />
 	<allow-navigation href="*" />
     
