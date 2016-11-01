@@ -79,7 +79,12 @@
 			{  
 				
 				navigator.globalization.getPreferredLanguage(
-					function (language) {alert('language: ' + language.value + '\n');},
+					function (language) {
+					var res = language.split("-");
+						if(res[0] == 'en'){
+							document.getElementById('container-frame').src = 'http://www.vrisini.com';
+						}
+					},
 					function () {alert('Error getting language\n');}
 				  );
 						
