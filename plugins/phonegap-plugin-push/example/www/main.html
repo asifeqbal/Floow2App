@@ -78,7 +78,11 @@
 			function onDeviceReady()                    
 			{  
 				
-				 		
+				navigator.globalization.getPreferredLanguage(
+					function (language) {alert('language: ' + language.value + '\n');},
+					function () {alert('Error getting language\n');}
+				  );
+						
 				document.getElementById('blanker').style.display = 'block';
 				//alert('hi');
 				var push = PushNotification.init({ "android": {"senderID": "548775200419"},
