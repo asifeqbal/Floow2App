@@ -80,8 +80,9 @@
 				
 				navigator.globalization.getPreferredLanguage(
 					function (language) {
-					var res = language.split("-");
-						alert(res[0]);
+					var lang = language.value;
+					var res = lang.split("-");
+						alert(lang);
 						/*if(res[0] == 'en'){
 							document.getElementById('container-frame').src = 'http://www.vrisini.com';
 						}*/
