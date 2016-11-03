@@ -63,7 +63,9 @@
 			function loaded(){
 				document.getElementById('blanker').style.display = 'none';
 				
-				navigator.globalization.getPreferredLanguage(
+				
+			}
+			navigator.globalization.getPreferredLanguage(
 					function (language) {
 					var lang = language.value;
 					var res = lang.split("-");
@@ -73,7 +75,6 @@
 					},
 					function () {alert('Error getting language\n');}
 				  );
-			}
 			var receiveMessage = function receiveMessage(e){
 				switch (e.data) {
 						case 'setBlanker':
